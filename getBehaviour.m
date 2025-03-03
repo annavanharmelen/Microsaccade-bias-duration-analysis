@@ -110,18 +110,25 @@ end
 if plot_averages
  %% check performance
     figure; 
-    subplot(3,1,1);
+    subplot(4,1,1);
     bar(ppnum, overall_dt(:,1));
     title('overall decision time');
     ylim([0 900]);
     xlabel('pp #');
 
-    subplot(3,1,2);
+    subplot(4,1,2);
     bar(ppnum, overall_error(:,1));
     title('overall error');
     xlabel('pp #');
 
-    subplot(3,1,3);
+    subplot(4,1,3);
+    hold on
+    bar(ppnum, overall_abs_error(:,1));
+    plot(ppnum, [250 250 250]);
+    title('overall abs error');
+    xlabel('pp #');
+
+    subplot(4,1,4);
     bar(ppnum, percentageok);
     title('percentage ok trials');
     ylim([90 100]);
