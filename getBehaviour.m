@@ -4,10 +4,10 @@ clc
 
 %% set parameters and loops
 display_percentage_ok = 0;
-plot_individuals = 1;
+plot_individuals = 0;
 plot_averages = 1;
 
-pp2do = [1];
+pp2do = [1:3];
 p = 0;
 
 [bar_size, bright_colours, colours, light_colours, SOA_colours, dark_colours, subplot_size, labels, percentageok, overall_dt, overall_error] = setBehaviourParam(pp2do);
@@ -55,7 +55,7 @@ for pp = pp2do
         subplot(subplot_size,subplot_size,p);
         h = histogram(behdata.duration_offset,50);       
         title(['duration offset - pp ', num2str(pp2do(p))]);
-        xlim([-100 100]);
+        xlim([-500 500]);
         ylim([0 150]);
         
         figure(figure_nr);
