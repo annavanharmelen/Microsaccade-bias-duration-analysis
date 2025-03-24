@@ -124,7 +124,7 @@ if plot_averages
     subplot(4,1,3);
     hold on
     bar(ppnum, overall_abs_error(:,1));
-    plot(ppnum, [250 250 250]);
+    plot([0, max(ppnum)], [250 250]);
     title('overall abs error');
     xlabel('pp #');
 
@@ -145,7 +145,7 @@ if plot_averages
     figure_nr = figure_nr+1;
     bar(mean(error_order, 1));
     xticklabels(labels)
-    ylabel('Reprpduction error (ms)');
+    ylabel('Reproduction error (ms)');
 
     %% effect of target duration on behaviour
     figure(figure_nr);
@@ -170,7 +170,7 @@ if plot_averages
     xticklabels(target_duration_bins);
     xlabel('Bin centre for target durations (ms)');
     ylabel('Reproduced duration (ms)');
-    legend({'p1', 'p2', 'p3', 'ideal pp'});
+    legend({'p1', 'p2', 'p3', 'p4', 'p5', 'ideal pp'});
 
     figure(figure_nr);
     figure_nr = figure_nr+1;
