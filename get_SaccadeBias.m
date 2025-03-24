@@ -10,7 +10,7 @@ oneOrTwoD_options = {'_1D','_2D'};
 plotResults = 1;
 
 %% loop over participants
-for pp = [1];
+for pp = [4:5];
 
     %% load epoched data of this participant data
     param = getSubjParam(pp);

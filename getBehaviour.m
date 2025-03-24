@@ -7,7 +7,7 @@ display_percentage_ok = 0;
 plot_individuals = 0;
 plot_averages = 1;
 
-pp2do = [1:3];
+pp2do = [1:5];
 p = 0;
 
 [bar_size, bright_colours, colours, light_colours, SOA_colours, dark_colours, subplot_size, labels, percentageok, overall_dt, overall_error] = setBehaviourParam(pp2do);
