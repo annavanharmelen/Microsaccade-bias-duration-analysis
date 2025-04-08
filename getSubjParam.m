@@ -3,9 +3,9 @@ function param = getSubjParam(pp)
 %% participant-specific notes
 
 %% set path and pp-specific file locations
-unique_numbers = [15, 90, 49, 17, 35]; %needs to be in the right order
+unique_numbers = [25, 10, 33, 43, 92]; %needs to be in the right order
 
-param.path = '\\labsdfs.labs.vu.nl\labsdfs\FGB-ETP-CogPsy-ProactiveBrainLab\core_lab_members\Anna\Data\m4 - duration v1\';
+param.path = '\\labsdfs.labs.vu.nl\labsdfs\FGB-ETP-CogPsy-ProactiveBrainLab\core_lab_members\Anna\Data\m4 - duration v2\';
 
 if pp < 10
     param.subjName = sprintf('pp0%d', pp);
