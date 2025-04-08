@@ -5,7 +5,7 @@ function param = getSubjParam(pp)
 %% set path and pp-specific file locations
 unique_numbers = [15, 90, 49, 17, 35]; %needs to be in the right order
 
-param.path = '\\labsdfs.labs.vu.nl\labsdfs\FGB-ETP-CogPsy-ProactiveBrainLab\core_lab_members\Anna\Data\m4 - duration\';
+param.path = '\\labsdfs.labs.vu.nl\labsdfs\FGB-ETP-CogPsy-ProactiveBrainLab\core_lab_members\Anna\Data\m4 - duration v1\';
 
 if pp < 10
     param.subjName = sprintf('pp0%d', pp);
