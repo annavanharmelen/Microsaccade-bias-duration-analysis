@@ -179,5 +179,14 @@ if plot_averages
     xlabel('Bin centre for target durations (ms)');
     ylabel('Reproduction error (ms)');
 
+    figure(figure_nr);
+    figure_nr = figure_nr+1;
+    hold on
+    bar([1:2], [mean(mean(rt_durations(:,1:4))), mean(mean(rt_durations(:,6:11)))]);
+    plot([1:2], [mean(rt_durations(:,1:4),2), mean(rt_durations(:,6:11),2)]);
+    xticklabels({"Short", "Long"});
+    xlabel("Item condition");
+    ylabel("Reproduction time (ms)");
+
 
 end
