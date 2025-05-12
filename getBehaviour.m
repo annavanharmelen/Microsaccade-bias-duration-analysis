@@ -165,8 +165,8 @@ if plot_averages
     figure(figure_nr);
     figure_nr = figure_nr+1;
     hold on
-    plot([500:100:1500], rt_durations');
-    plot([500:100:1500], [500:100:1500]);
+    plot([200:100:1600], rt_durations');
+    plot([200:100:1600], [200:100:1600]);
     xticklabels(target_duration_bins);
     xlabel('Bin centre for target durations (ms)');
     ylabel('Reproduced duration (ms)');
