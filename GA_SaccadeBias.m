@@ -130,7 +130,7 @@ if plotGAs
     hold on
     p1 = frevede_errorbarplot(saccade.time, squeeze(d1(:,1,:)), 'b', 'se');
     p2 = frevede_errorbarplot(saccade.time, squeeze(d2(:,1,:)), 'r', 'se');
-    legend([p1, p2, p3], {'toward', 'away', 'effect'});
+    legend([p1, p2], {'toward', 'away'});
     ylim([-0.2, 0.5])
     ylabel('Rate (Hz)');
     xlabel('Time (ms)');
@@ -151,14 +151,11 @@ if plotGAs
     hold on
     p7 = frevede_errorbarplot(saccade.time, squeeze(d3(:,1,:)), 'k', 'both');
     xlim(xlimtoplot);
-    % ylim([-0.02 0.06]);
     yticks([0 0.05]);
     plot(xlim, [0,0], '--', 'LineWidth',2, 'Color', [0.6, 0.6, 0.6]);
     plot([0,0], ylim, '--', 'LineWidth',2, 'Color', [0.6, 0.6, 0.6]);
-    % legend([p7], 'effect', 'EdgeColor', 'w', 'Fontsize', 28);
-    ylabel('Rate (Hz)', 'Fontsize', 28);
-    xlabel('Time (ms)', 'Fontsize', 28);
-    set(gcf,'position',[0,0, 1800,900])
+    ylabel('Rate (Hz)');
+    xlabel('Time (ms)');
     xlabel('Time (ms)');
     hold off
     
